@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  position: relative;
+}
+
+nav {
+  background-color: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0; /* Ensures the navbar starts from the top */
+  transition: background-color 0.3s, box-shadow 0.3s;
+  z-index: 1000;
+}
+
+#nav-lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#nav-lists li {
+  margin: 0 15px;
+}
+
+button {
+  background-color: transparent;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+section {
+  margin-top: 70px;
+  padding: 40px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+h1, h2 {
+  color: #555;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.social-links a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
