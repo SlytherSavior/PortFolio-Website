@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/stylesheet.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <script src="scripts/script.js" defer></script>
   <title>Shrijan Poudel Portfolio</title>
 </head>
@@ -14,51 +15,87 @@
       <li><button id="nav-home" onclick="scrollToSection('home')">Home</button></li>
       <li><button id="nav-skills" onclick="scrollToSection('skills')">Skills</button></li>
       <li><button id="nav-projects" onclick="scrollToSection('projects')">Projects</button></li>
-      <li><button id="nav-contact" onclick="scrollToSection('contact')">Contact</button></li>
       <li><button id="nav-resume" onclick="scrollToSection('resume')">Resume</button></li>
+      <li><button id="nav-contact" onclick="scrollToSection('contact')">Contact</button></li>
     </ul>
   </nav>
 
+
   <section id="home">
     <h1>Greetings, I'm Shrijan Poudel</h1>
-    <p>Welcome to my digital haven, where creativity and technology converge. I am deeply passionate about web development, wielding expertise in a diverse spectrum of languages and technologies including JavaScript, TypeScript, HTML, CSS, Java, Python, and     After Effects, Premiere Pro, Lightroom, Adobe XD, InDesign, Wondershare Filmora, and DaVinci Resolve. Join me on this journey where innovation meets artistry!</p>
+    <p>Welcome to my digital haven, where creativity and technology converge. I am deeply passionate about web development, wielding expertise in a diverse spectrum of languages and technologies including JavaScript, TypeScript, HTML, CSS, Java, Python, and After Effects, Premiere Pro, Lightroom, Adobe XD, InDesign, Wondershare Filmora, and DaVinci Resolve. Join me on this journey where innovation meets artistry!</p>
   </section>
 
   <section id="skills">
     <h2>Technical Skills</h2>
-    <ul id="prog-skills">
-        <li><strong>JavaScript:</strong> Front-end and back-end development</li>
-        <li><strong>TypeScript:</strong> Enhancing JavaScript with static types</li>
-        <li><strong>HTML:</strong> Building the structure of web pages</li>
-        <li><strong>CSS:</strong> Styling and designing web pages</li>
-        <li><strong>Java:</strong> Object-oriented programming</li>
-        <li><strong>Python:</strong> Versatile scripting language</li>
-        <li><strong>SQL:</strong> Database management and querying</li>
-    </ul>
+    <div id="prog-skills">      
+      <span>
+        <i class="fab fa-js" onclick="toggleDescription('js')"></i>
+        <div id="js-description" class="skill-description">
+          <strong>JavaScript:</strong> Front-end and back-end development
+        </div>
+      </span>
+      <span>
+        <i class="fab fa-html5" onclick="toggleDescription('html')"></i>
+        <div id="html-description" class="skill-description">
+          <strong>HTML:</strong> Building the structure of web pages
+        </div>
+      </span>  
+      <span>
+        <i class="fab fa-css3" onclick="toggleDescription('css')"></i>
+        <div id="css-description" class="skill-description">
+          <strong>CSS:</strong> Styling and designing web pages
+        </div>
+      </span>  
+      <span>
+        <i class="fab fa-java" onclick="toggleDescription('java')"></i>
+        <div id="java-description" class="skill-description">
+          <strong>Java:</strong> Object-oriented programming
+        </div>
+      </span>  
+      <span>
+        <i class="fab fa-python" onclick="toggleDescription('python')"></i>
+        <div id="python-description" class="skill-description">
+          <strong>Python:</strong> Versatile scripting language
+        </div>
+      </span>  
+      <span>
+
+        <i class="fas fa-database" onclick="toggleDescription('sql')"></i>
+        <div id="sql-description" class="skill-description">
+          <strong>SQL:</strong> Database management and querying
+        </div>
+      </span>  
+    </div>
 
     <h2>Creative Skills</h2>
     <ul id="design-skills">
-        <li><strong>Video Editing:</strong> Crafting engaging video content</li>
-        <li><strong>Short Video Making:</strong> Creating impactful short videos</li>
-        <li><strong>Documentary Making:</strong> Telling compelling stories through documentaries</li>
-        <li><strong>Motion Graphics:</strong> Adding dynamic elements to visual content</li>
-        <li><strong>Photo Editing:</strong> Enhancing and retouching photos</li>
-        <li><strong>Graphic Designing:</strong> Creating visually appealing graphics</li>
+      <li><strong>Video Editing:</strong> Crafting engaging video content</li>
+      <li><strong>Short Video Making:</strong> Creating impactful short videos</li>
+      <li><strong>Documentary Making:</strong> Telling compelling stories through documentaries</li>
+      <li><strong>Motion Graphics:</strong> Adding dynamic elements to visual content</li>
+      <li><strong>Photo Editing:</strong> Enhancing and retouching photos</li>
+      <li><strong>Graphic Designing:</strong> Creating visually appealing graphics</li>
     </ul>
-</section>
-
+  </section>
 
   <section id="projects">
-    <!-- Content for the Projects section -->
     <h2>Projects</h2>
     <p>Details about your projects go here...</p>
+    <span id="github"><B>The following are my github projects:</B></span>
+    <ul id="git-proj">
+      <li>KBC quiz app using OPENSOURCE code</li>
+      <li>A quote bot for discord</li>
+      <li>My Simple Rock paper and Scissors game </li>
+
+    </ul>
   </section>
 
   <section id="resume">
-    <!-- Add your resume content here -->
     <h2>Resume</h2>
     <p>Your resume details go here...</p>
-  </section>
+    <a href="assets/downloads/Resume-Shrijan-Poudel.pdf" download="ShrijanPoudelResume.pdf">Download My LinkedIn Resume</a>
+</section>
 
   <section id="contact">
     <h2>Contact</h2>
@@ -75,8 +112,7 @@
               <rect width="48" height="48" fill="white"/>
             </clipPath>
           </defs>
-        </svg>
-        
+        </svg>        
       </a>
       <a href="https://github.com/your-github" target="_blank">
         <svg width="38" height="38" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">

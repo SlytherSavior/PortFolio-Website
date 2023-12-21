@@ -1,16 +1,24 @@
 body {
   margin: 0;
   position: relative;
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9; /* Light gray background */
+  color: #333;
+  overflow-x: hidden;
 }
 
 nav {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: #3e4095; /* Deep purple navbar background */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   position: fixed;
   width: 100%;
-  top: 0; /* Ensures the navbar starts from the top */
+  top: 0;
   transition: background-color 0.3s, box-shadow 0.3s;
   z-index: 1000;
+}
+
+#skills ul li{ 
+  list-style-type: none;
 }
 
 #nav-lists {
@@ -26,8 +34,8 @@ nav {
 }
 
 button {
-  background-color: transparent;
-  color: #333;
+  background-color: #3e4095; /* Deep purple button background */
+  color: #fff;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
@@ -37,7 +45,6 @@ button {
 
 button:hover {
   background-color: #555;
-  color: #fff;
 }
 
 section {
@@ -45,11 +52,16 @@ section {
   padding: 40px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  border-radius: 10px;
+  transition: transform 0.3s ease; /* Add a subtle scale effect on hover */
+}
+
+section:hover {
+  transform: scale(1.02);
 }
 
 h1, h2 {
-  color: #555;
+  color: #3e4095; /* Deep purple heading color */
 }
 
 #nav-lists ul {
@@ -64,7 +76,7 @@ ul li {
 .social-links a {
   margin-right: 20px;
   text-decoration: none;
-  color: #333;
+  color: #3e4095; /* Deep purple social link color */
   font-size: 18px;
 }
 
@@ -74,3 +86,25 @@ ul li {
   border-radius: 50%;
   margin-right: 10px;
 }
+.skill-description {
+  display: none;
+  margin-top: 10px;
+}
+
+#skills i { 
+  cursor: pointer;
+}
+#prog-skills i { 
+  font-size: 5rem;
+
+
+}
+#prog-skills ul li {
+  border-style:solid;
+  border-color:black;
+}
+#prog-skills { 
+  display: flex; 
+  flex-direction:column;
+}
+/* Add more styles for other elements as needed */

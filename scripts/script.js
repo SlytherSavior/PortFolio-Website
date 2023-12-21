@@ -17,12 +17,14 @@ window.addEventListener('scroll', () => {
   }
 });
 
-document.addEventListener("DOMContentLoaded",function(){
+function toggleDescription(skill) {
+  const description = document.getElementById(`${skill}-description`);
+  if (description) {
+    // Toggle the visibility of the description
+    description.style.display = description.style.display === 'none' ? 'block' : 'none';
+  }
+}
 
-  
-
-
-
-
-
+document.addEventListener("DOMContentLoaded", function(){
+  // Your additional JavaScript logic goes here
 });
