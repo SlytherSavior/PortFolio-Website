@@ -52,7 +52,7 @@ h1, h2 {
   color: #555;
 }
 
-ul {
+#nav-lists ul {
   list-style: none;
   padding: 0;
 }
