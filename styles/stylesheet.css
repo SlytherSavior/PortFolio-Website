@@ -23,7 +23,9 @@ nav {
 
 
 #home  {
-  
+    height : 100%; 
+    background-color: rgb(26, 75, 67);
+    width : 100%;  
 }
 
 .bold-txt { 
@@ -63,7 +65,7 @@ button:hover {
   background-color: #555;
 }
 
-section {
+section,#home {
   margin-top: 70px;
   padding: 40px;
   background-color: #fff;
