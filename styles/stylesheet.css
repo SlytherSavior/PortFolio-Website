@@ -1,3 +1,7 @@
+
+
+
+
 body {
   margin: 0;
   position: relative;
@@ -17,6 +21,16 @@ nav {
   z-index: 1000;
 }
 
+
+#home  {
+  
+}
+
+.bold-txt { 
+  font-size: 30rem ; 
+  font-family:monospace ;
+  color : rgb(19, 52, 30);
+}
 
 
 #skills ul li{ 
