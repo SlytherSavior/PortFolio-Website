@@ -1,4 +1,15 @@
 
+body{ 
+    display: flex; 
+    flex-direction: column;
+}
+
+#side-men{
+    width: 100px;
+    height: 100vh;
+    background-color: black; 
+    margin-left:2px;
+}
 
 
 
