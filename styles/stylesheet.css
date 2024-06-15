@@ -10,6 +10,65 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ body {
+  font-family: 'Varela Round', sans-serif;
+  background-color: #1c1c1c;
+  color: #ffffff;
+}
+
+.masthead {
+  background: url('assets/img/header-bg.jpg') no-repeat center center;
+  background-size: cover;
+}
+
+.about-section, .skills-section, .projects-section {
+  padding: 100px 0;
+}
+
+.contact-section {
+  padding: 50px 0;
+}
+
+.navbar-brand, .nav-link {
+  color: #ffffff !important;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+  color: #ffdd57 !important;
+}
+
+.btn-primary {
+  background-color: #ffdd57;
+  border-color: #ffdd57;
+}
+
+.btn-primary:hover {
+  background-color: #e6c64e;
+  border-color: #e6c64e;
+}
+
+.project img {
+  border-radius: 10px;
+}
+
+.featured-text {
+  margin: 40px 0;
+}
+
+.project-text h4 {
+  color: #ffffff;
+}
+
+.project-text p {
+  color: #b2b2b2;
+}
+
+.text-white-50 {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
